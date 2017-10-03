@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle keygen",
+        "command": "keygen:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "keygen",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "keygen:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
