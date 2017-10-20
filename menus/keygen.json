@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle keygen",
-        "command": "keygen:toggle"
+        "label": "Generate random key",
+        "command": "keygen:generate"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "keygen",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "keygen:toggle"
+              "label": "Generate",
+              "command": "keygen:generate"
             }
           ]
         }

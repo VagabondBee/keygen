@@ -1,5 +1,6 @@
 {CompositeDisposable} = require 'atom'
-cryptoRandomString = require 'crypto-random-string'
+KeygenOptions = require './options'
+CryptoRandomString = require 'crypto-random-string'
 module.exports = {
   subscriptions: null
 
@@ -13,5 +14,5 @@ module.exports = {
   generate: ->
     editor = atom.workspace.getActiveTextEditor()
     if editor
-      editor.insertText(cryptoRandomString(16));
+      editor.insertText(CryptoRandomString(KeygenOptions.get('keylength')));
 }
