@@ -1,6 +1,5 @@
 {CompositeDisposable} = require 'atom'
-random = require './random'
-
+cryptoRandomString = require 'crypto-random-string'
 module.exports = {
   subscriptions: null
 
@@ -14,5 +13,5 @@ module.exports = {
   generate: ->
     editor = atom.workspace.getActiveTextEditor()
     if editor
-      editor.insertText(random.RandomCharacterGenerator())
+      editor.insertText(cryptoRandomString(16));
 }
