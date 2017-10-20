@@ -11,6 +11,9 @@
     "generate",
     "secure"
   ],
+  "ativationCommands": {
+    "atom-workspace": "keygen:generate"
+  },
   "repository": "https://github.com/metalcanine/keygen",
   "license": "MIT",
   "engines": {
