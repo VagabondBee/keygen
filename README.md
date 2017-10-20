@@ -1,3 +1,3 @@
-# keygen package
+# keygen
 
-A short description of your package.
+Generates a cryptographically secure key of random characters in editor panes
