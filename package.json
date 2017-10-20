@@ -2,13 +2,16 @@
   "name": "keygen",
   "main": "./lib/keygen",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Secure Random String Generator Plugin For Atom",
   "keywords": [
+    "secrets",
+    "password",
+    "generator",
+    "keyphrase",
+    "generate",
+    "secure"
   ],
-  "activationCommands": {
-    "atom-workspace": "keygen:toggle"
-  },
-  "repository": "https://github.com/atom/keygen",
+  "repository": "https://github.com/metalcanine/keygen",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
