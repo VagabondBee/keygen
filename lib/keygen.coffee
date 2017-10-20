@@ -6,13 +6,13 @@ module.exports = {
 
   activate: ->
     @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.commands.add 'atom-workspace',
-      'keygen:generate': => @generate()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'keygen:generate': => @generate()
 
   deactivate: ->
     @subscriptions.dispose()
 
   generate: ->
-    if editor = atom.workspace.getActiveTextEditor()
+    editor = atom.workspace.getActiveTextEditor()
+    if editor
       editor.insertText(random.RandomCharacterGenerator())
 }
